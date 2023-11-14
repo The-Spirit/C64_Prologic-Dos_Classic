@@ -1,0 +1,13 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+74LS00,DIP-14_W7.62mm_LongPads,1,74LS00,
+74LS138,DIP-16_W7.62mm_LongPads,1,74LS138,
+74LS30,DIP-14_W7.62mm_LongPads,1,74LS30,
+"C1, C2, C3, C4, C5, C6",C_Disc_D3.4mm_W2.1mm_P2.50mm,6,100n,
+"DRIVE 1, DRIVE 2",IDC-Header_2x07_P2.54mm_Vertical,2,Conn_02x07_Counter_Clockwise,
+EXPANSIONPORT,C64-Cart-Socket-Vertical,1,C64-Exp-Port,
+JP1,PinHeader_1x02_P2.54mm_Vertical,1,Jumper_2_Open,
+KERNAL,DIP-28_W15.24mm,1,27128,
+PIA_/_6821,DIP-40_W15.24mm,1,6821,
+RESET,SW_Tactile_SPST_Angled_PTS645Vx39-2LFS,1,RESET,
+RN1,R_Array_SIP9,1,R_Network08,
+SW1,SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm,1,SW_DIP_x02,
