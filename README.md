@@ -85,22 +85,22 @@ It was distributed by Jann data technology, later by the company REX data techno
 
 ## Floppy commands
 Similar to the DOS-Wedge 5.1:
-* @              Error channel output
-* @$             Directory Calling the directory
-* @N:Name, ID    New or formatting a floppy disk
-* @C:New=Old     Copy or rename a file under a new file name
-* @R:Neuer       Name = Alter Name Rename or rename a file
-* @S:Name        Scratch or delete the specified file
-* @I             Initialize diskette
-* @V             Validate diskette
-* @XL:Name       Protect file from overwriting (write protection)
-* @XU:Name       Unprotect the write protection of a protected file
-* @XR+/-         Enable/disable floppy RAM
-* @XF+/-         Enable/disable fast data transfer
-* @XV+/-         Enable/disable VERIFY after write access
-* @XE+/-         Enable/disable VERIFY after error query
-* @XD+/-         Enable/disable 35/40 tracks
-* @XS            Show advanced floppy status: 04,R+,F+,V+,E+,D+,00,00 (Standard values)
+<pre>@              Error channel output
+@$             Directory Calling the directory
+@N:Name, ID    New or formatting a floppy disk
+@C:New=Old     Copy or rename a file under a new file name
+@R:Neuer       Name = Alter Name Rename or rename a file
+@S:Name        Scratch or delete the specified file
+@I             Initialize diskette
+@V             Validate diskette
+@XL:Name       Protect file from overwriting (write protection)
+@XU:Name       Unprotect the write protection of a protected file
+@XR+/-         Enable/disable floppy RAM
+@XF+/-         Enable/disable fast data transfer
+@XV+/-         Enable/disable VERIFY after write access
+@XE+/-         Enable/disable VERIFY after error query
+@XD+/-         Enable/disable 35/40 tracks
+@XS            Show advanced floppy status: 04,R+,F+,V+,E+,D+,00,00 (Standard values)</pre>
 
 ## Sources
 1. https://www.c64-wiki.de/wiki/Prologic_DOS_Classic
