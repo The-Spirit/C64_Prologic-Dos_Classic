@@ -66,7 +66,7 @@ It was distributed by Jann data technology, later by the company REX data techno
 - F3  LIST
 - F4  OLD (UNNEW-Function according to NEW or software-side RESET)
 - F5  RUN
-- F6  OFF (2-step shutdown of Prologic DOS support)
+- F6  OFF (2-step shutdown, 1st time shuts down fastload/save, 2nd time disables at all)
 - F7  LOAD loads the first program on disk or the selected program from a directory
 - F8  DEV#8/9 Changes the current floppy drive
 
@@ -82,14 +82,17 @@ It was distributed by Jann data technology, later by the company REX data techno
 - CTRL + CRSR right sets the cursor 8 characters to the right
 - CTRL + CRSR below places the cursor in the bottom left corner of the screen
 - CTRL + Resetbutton bypasses resetvectors at $8000
+- CTRL slows down scroll listing (also works with directory output)
+- SHIFT stops scrolling listing (also works with directory output)
+- SHIFT LOCK stops scrolling listing and pressing any key scrolls one or more line(s) (also works with directory output)
 
 ## Floppy commands
 Similar to the DOS-Wedge 5.1:
 <pre>@              Error channel output
 @$             Directory Calling the directory
-@N:Name, ID    New or formatting a floppy disk
-@C:New=Old     Copy or rename a file under a new file name
-@R:Neuer       Name = Alter Name Rename or rename a file
+@N:Name, ID    Formatting a (new) floppy disk
+@C:New=Old     Copy file on the same disk
+@R:New=Old     Rename file from Old to New
 @S:Name        Scratch or delete the specified file
 @I             Initialize diskette
 @V             Validate diskette
