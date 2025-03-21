@@ -11,6 +11,7 @@ A redraw and and some improvements of Prologic-Dos Classic pcb's for the Commodo
 [LOAD Functions](#LOAD-Functions)\
 [Hotkeys](#Hotkeys)\
 [Floppy commands](#Floppy-commands)\
+[Building](#Building)\
 [Sources](#Sources)
 
 
