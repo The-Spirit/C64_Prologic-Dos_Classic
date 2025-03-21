@@ -1,6 +1,6 @@
 # C64 PrologicDos Classic
 
-Under development: A redraw of Prologic-Dos Classic pcb's for the Commodore 64.
+A redraw and and some improvements of Prologic-Dos Classic pcb's for the Commodore 64.
 
 ## Table of contents
 [Features](#Features)\
@@ -104,6 +104,12 @@ Similar to the DOS-Wedge 5.1:
 @XE+/-         Enable/disable VERIFY after error query
 @XD+/-         Enable/disable 35/40 tracks
 @XS            Show advanced floppy status: 04,R+,F+,V+,E+,D+,00,00 (Standard values)</pre>
+
+## Building
+Use 27C128 or larger eproms to program the drive-roms and place the content at the end of the address range. 
+This is necessary because the unused pens are high as standard due to compatibility.
+
+Making the cable requires a 14-veined flat cable, mount the IDC connector with the cams towards each other. Do not place the strain relief on the connector that goes into the disk drive. This will otherwise be too high and will skew the PCB when placing the top. This may result in the CPU breaking down.
 
 ## Sources
 1. https://www.c64-wiki.de/wiki/Prologic_DOS_Classic
