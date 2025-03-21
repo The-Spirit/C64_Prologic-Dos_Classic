@@ -11,19 +11,20 @@ As can be seen in the diagram, address lines A8 to A12 are always kept high. Add
 According to the manual, this would not be the case, it describes that bit 7 of port A must always be high and therefore address line A8 of the MMU is always high.
 
 An 8K eprom has a range of $0000 to $1FFF. 
-Based on the fact that address lines A8 to A12 are always high, the consequence is that only the data from $1E00 to $1FFF is used.
+Based on the fact that address lines A8 to A12 are always high, the consequence is that only the data from $1F00 to $1FFF is used.
 
 Address line A7 is also always high unless it is made low to use Dolphin Dos. The manual explains that this is possible by replacing the KERNAL eprom with the Dolphin Dos variant. 
 In addition, a parallel cable will have to be made to the 6522 in the 1541 and the user port of the Commodore 64.
 
-This means that from $1E00 to $1EFF is used as a memory mapping for Dolpin Dos and $1F00 to $1FFF for Prologic Dos.
+This means that from $1F00 to $1F7F is used as a memory mapping for Dolpin Dos and $1F80 to $1FFF for Prologic Dos.
 
 Addressline A6 determines whether Prologic Dos is on or off.
-If this is low, Prologic Dos is turned off and the mapping takes place based on the data in $1F00 to $1E7F. 
-If address line A6 is high, the mapping takes place for Prologic Dos in $1F80 to $1FFF
+If this is low, Prologic Dos is turned on and the mapping takes place based on the data in $1F80 to $1FBF. 
+If address line A6 is high, the mapping takes place for standard 1541 in $1FC0 to $1FFF
 
 When using Prologic Dos, 35 or 40 tracks can be used for a floppy disk. This setting uses a modified piece from the KERNAL and is determined by the MMU based on address line A5.
-The mapping for 35 tracks is classified from $1F80 to $1FBF and 40 tracks from $1FC0 to $1FFF.
+The mapping for 35 tracks is classified from $1F80 to $1F9F and 40 tracks from $1FA0 to $1FBF.
+In case of A6 high and it's working as a 1541, $1FC0 to $1FDF and $1FC0 to $1FFF contain the same information.
 
 The CPU address lines A11 to A15 are linked to A0 to A4 of the MMU. This allows you to work in 2K blocks in the memory that the CPU uses.
 
